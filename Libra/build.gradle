@@ -30,21 +30,6 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    flavorDimensions "mode"
-    productFlavors {
-        live {
-            buildConfigField 'String', 'DOMAIN','"live"'
-            buildConfigField 'String', 'BASE_URL', '"https://drk.ekbana.net/topics/"'
-            buildConfigField 'String', 'LOG_USER', '"drk"'
-            buildConfigField 'String', 'LOG_PASSWORD', '"Drk@ekbana31"'
-        }
-        dev {
-            buildConfigField 'String', 'DOMAIN','"qa"'
-            buildConfigField 'String', 'BASE_URL_LOG', '"https://drk.ekbana.net/topics/"'
-            buildConfigField 'String', 'LOG_USER', '"drk"'
-            buildConfigField 'String', 'LOG_PASSWORD', '"Drk@ekbana31"'
-        }
-    }
 }
 
 dependencies {
